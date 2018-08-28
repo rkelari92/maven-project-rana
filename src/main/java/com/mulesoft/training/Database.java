@@ -14,7 +14,7 @@ public class Database implements InitializingBean {
     private static Logger logger = LoggerFactory.getLogger(Database.class);
     
     public void afterPropertiesSet() throws Exception {
-        String dbURL = "jdbc:derby:memory:muleEmbeddedDB;create=true";
+		String dbURL = "jdbc:derby:memory:muleEmbeddedDB;create=true";
         Connection conn = null;
         try {
             Class.forName("org.apache.derby.jdbc.EmbeddedDriver").newInstance();
