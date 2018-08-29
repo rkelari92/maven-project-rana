@@ -17,6 +17,9 @@
     	
     	<uid>ranadheer_kelari</uid>
     	<pwd>junk</pwd>
+    	
+    	<derby.version>10.14.2.0</derby.version>
+    	<activemq.version>5.15.5</activemq.version>
 	</properties>
 
 	<build>
@@ -177,7 +180,7 @@
     <dependency>
             <groupId>org.apache.derby</groupId>
             <artifactId>derby</artifactId>
-            <version>10.14.2.0</version>
+            <version>${derby.version}</version>
         </dependency>
     <dependency>
             <groupId>org.mule.transports</groupId>
@@ -188,17 +191,20 @@
     <dependency>
             <groupId>org.apache.activemq</groupId>
             <artifactId>activemq-kahadb-store</artifactId>
-            <version>5.15.5</version>
+            <version>${activemq.version}</version>
+           <!--  <scope>provided</scope> -->
         </dependency>
     <dependency>
             <groupId>org.apache.activemq</groupId>
             <artifactId>activemq-broker</artifactId>
-            <version>5.15.5</version>
+            <version>${activemq.version}</version>
+            <!-- <scope>provided</scope> -->
         </dependency>
     <dependency>
             <groupId>org.apache.activemq</groupId>
             <artifactId>activemq-client</artifactId>
-            <version>5.15.5</version>
+            <version>${activemq.version}</version>
+           <!--  <scope>provided</scope> -->
         </dependency>
     </dependencies>
 
